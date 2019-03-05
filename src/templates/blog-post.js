@@ -49,7 +49,7 @@ export const BlogPostTemplate = ({
       </div>
       <div className="footer">
         <div className="d-inline-block float-right">
-          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://woodcreek.geosync.cloud/admin" target="_blank">
+          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://russellsprings.geosync.cloud/admin" target="_blank">
             <Icon.Settings size={16}/>
           </a>
         </div>
@@ -70,9 +70,9 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
-  var re = new RegExp("https://geosync.cloud/maps/e2080ba6-7192-4d74-afdb-390d7b1db825", "g");
+  var re = new RegExp("https://geosync.cloud/maps/b2426f0d-2082-494d-a650-6ffcef2a43f5", "g");
   post.html = post.html.replace(re, "/map");
-  re = new RegExp("https://woodcreek.geosync.cloud/map", "g");
+  re = new RegExp("https://russellsprings.geosync.cloud/map", "g");
   post.html = post.html.replace(re, "/map");
 
   return (

@@ -32,14 +32,15 @@ const TemplateWrapper = ({ children }) => (
           <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
           <link rel="manifest" href="/img/site.webmanifest" />
+          <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#263b64" />
           <meta name="apple-mobile-web-app-title" content={data.site.siteMetadata.title} />
           <meta name="application-name" content={data.site.siteMetadata.title} />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
           <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:image:width" content="279" />
-          <meta property="og:image:height" content="279" />
+          <meta property="og:image:width" content="250" />
+          <meta property="og:image:height" content="250" />
           <meta property="og:description" content={data.site.siteMetadata.description} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />

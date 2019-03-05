@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import * as Icon from 'react-feather';
 
-export const ContactPageTemplate = ({ name, address, city_state_zip, phone, fax, hours }) => {
+export const ContactPageTemplate = ({ name, address, city_state_zip, phone, fax }) => {
   return (
     <div>
       <div className="container container-main grid-md">
@@ -27,18 +27,10 @@ export const ContactPageTemplate = ({ name, address, city_state_zip, phone, fax,
             F: {fax}
           </div>
         </div>
-        <div className="card">
-          <div className="card-header">
-            Hours
-          </div>
-          <div className="card-body">
-            {hours}
-          </div>
-        </div>
       </div>
       <div className="footer">
         <div className="d-inline-block float-right">
-          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://woodcreek.geosync.cloud/admin" target="_blank">
+          <a className="btn btn-sm btn-link tooltip tooltip-left" data-tooltip="Settings" rel="noopener noreferrer" href="https://russellsprings.geosync.cloud/admin" target="_blank">
             <Icon.Settings size={16}/>
           </a>
         </div>
@@ -50,7 +42,6 @@ export const ContactPageTemplate = ({ name, address, city_state_zip, phone, fax,
 ContactPageTemplate.propTypes = {
   address: PropTypes.string,
   phone: PropTypes.string,
-  hours: PropTypes.string,
 }
 
 const ContactPage = ({ data }) => {
@@ -64,7 +55,6 @@ const ContactPage = ({ data }) => {
         city_state_zip={frontmatter.city_state_zip}
         phone={frontmatter.phone}
         fax={frontmatter.fax}
-        hours={frontmatter.hours}
       />
     </Layout>
   )
@@ -85,8 +75,7 @@ export const contactPageQuery = graphql`
         address,
         city_state_zip,
         phone,
-        fax,
-        hours
+        fax
       }
     }
   }
