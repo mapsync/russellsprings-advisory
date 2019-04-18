@@ -1,9 +1,10 @@
 ---
 templateKey: contact-page
-title: Contact
 name: City Hall
-address: 487 Main Street
-city_state_zip: Russell Springs, KY 42642
+address: PO Box 247
+city_state_zip: 'Russell Springs, KY 42642'
 phone: (270) 866-3981
+alt_phone: Emergency (279) 343-6600 (Dispatch)
 fax: (270) 866-3860
 ---
+
