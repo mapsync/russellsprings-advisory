@@ -3,8 +3,10 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import * as Icon from 'react-feather';
+import Content, { HTMLContent } from '../components/Content'
 
-export const ContactPageTemplate = ({ name, address, city_state_zip, phone, fax }) => {
+export const ContactPageTemplate = ({ content, contentComponent, name, address, city_state_zip, phone, alt_phone, fax }) => {
+  const PageContent = contentComponent || Content
   return (
     <div>
       <div className="container container-main grid-md">
@@ -23,8 +25,17 @@ export const ContactPageTemplate = ({ name, address, city_state_zip, phone, fax 
             Phone
           </div>
           <div className="card-body">
-            T: {phone}<br />
+            T: <a href={"tel:1-" + phone}>{phone}</a>
+            Emergency: <a href={"tel:1-" + alt_phone}>{alt_phone}</a>
             F: {fax}
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-header">
+            Email
+          </div>
+          <div className="card-body">
+            <PageContent className="content" content={content} />
           </div>
         </div>
       </div>
@@ -45,16 +56,19 @@ ContactPageTemplate.propTypes = {
 }
 
 const ContactPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { markdownRemark: post } = data
 
   return (
     <Layout>
       <ContactPageTemplate
-        name={frontmatter.name} 
-        address={frontmatter.address}
-        city_state_zip={frontmatter.city_state_zip}
-        phone={frontmatter.phone}
-        fax={frontmatter.fax}
+        name={post.frontmatter.name}
+        address={post.frontmatter.address}
+        city_state_zip={post.frontmatter.city_state_zip}
+        phone={post.frontmatter.phone}
+        alt_phone={post.frontmatter.alt_phone}
+        fax={post.frontmatter.fax}
+        contentComponent={HTMLContent}
+        content={post.html}
       />
     </Layout>
   )
@@ -75,6 +89,7 @@ export const contactPageQuery = graphql`
         address,
         city_state_zip,
         phone,
+        alt_phone,
         fax
       }
     }

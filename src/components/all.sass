@@ -1,17 +1,17 @@
-$primary-color: #263b64;
-$primary-color-dark: rgba(38, 59, 100, 0.1);
-$secondary-color: rgba(38, 59, 100, 0.1);
+$primary-color: #263b64
+$primary-color-dark: rgba(5, 180, 242, 0.1)
+$secondary-color: rgba(5, 180, 242, 0.1)
 $link-color-dark: darken($primary-color, 10%) !default
 
 iframe
   border: 0
   position: fixed
-  top: 52px
+  top: 76px
   left: 0
   right: 0
   bottom: 0
   width: 100%
-  height: calc(100% - 52px)
+  height: calc(100% - 76px)
 
 .content .taglist
   list-style: none
@@ -53,15 +53,23 @@ iframe
 .section
   padding: 1.5rem 1.5rem
 
+.client-name
+  height: 1rem
+  font-weight: bold
+  text-align: center
+  color: $primary-color
+  span
+    color: #00b050
+
 .tab-menu-container
-  height: 2.8rem
+  height: 3.8rem
 
 .tab-menu
   position: fixed
   top: 0
   z-index: 999
   width: 100%
-  height: 2.8rem
+  height: 3.8rem
   background-color: white
   .btn
     color: #777
@@ -84,7 +92,7 @@ iframe
   .active
     color: $primary-color
 
-.navbar-brand 
+.navbar-brand
   height: 44px
   margin: 4px
   img
