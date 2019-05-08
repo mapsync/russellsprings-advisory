@@ -8,3 +8,5 @@ description: biol water test
 boil water advisory on dowell rd test
 
 ![](/img/small-logo.png)
+
+[see map](/map?layer=Advisory&feature=1)
