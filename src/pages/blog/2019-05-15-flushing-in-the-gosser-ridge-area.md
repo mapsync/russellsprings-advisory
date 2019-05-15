@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-title: Flushing in the Gosser ridge area
-date: 2019-05-15T11:02:06.125Z
-description: 'Flushing in the area of Gosser ridge may experience low pressure at times '
+title: flushing in the gosser ridge area
+date: 2019-05-15T11:01:13.716Z
+description: ''
 ---
-Water line flushing in the Gosser ridge area may experience low pressure at times f
+water line flushing in gosser ridge area may experience low pressure at times
