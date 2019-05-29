@@ -8,8 +8,8 @@ alt_phone: 279-343-6600
 fax: 270-866-5159
 ---
 Water/wastewater manager:  
-<a href="mail:trussell@russellsprings.net">trussell@russellsprings.net</a>  
+<a href="mailto:trussell@russellsprings.net">trussell@russellsprings.net</a>  
 
 Billing Clerk:  
-Suzanne Hunter - <a href="mail:shunter@russellsprings.net">shunter@russellsprings.net</a>  
-Tennille Hughes - <a href="mail:thughes@russellsprings.net">thughes@russellsprings.net</a>
+Suzanne Hunter - <a href="mailto:shunter@russellsprings.net">shunter@russellsprings.net</a>  
+Tennille Hughes - <a href="mailto:thughes@russellsprings.net">thughes@russellsprings.net</a>
