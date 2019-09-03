@@ -1,6 +1,8 @@
 ---
 templateKey: blog-post
-title: City Hall Closure - Sept 4th - Staff Training & Computer System Updates
+title: >-
+  City Hall Closure - Sept 4th (3:00 pm) - Staff Training & Computer System
+  Updates
 date: 2019-09-03T16:31:46.066Z
 description: City Hall Closure - Sept 4th @ 3 PM
 ---
