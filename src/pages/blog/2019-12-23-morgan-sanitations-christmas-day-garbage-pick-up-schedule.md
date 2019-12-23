@@ -1,9 +1,15 @@
 ---
 templateKey: blog-post
 title: Morgan Sanitation's Christmas Day Garbage Pick Up Schedule
-date: 2019-12-23T21:55:17.835Z
+date: 2019-12-23T22:22:13.770Z
 description: >-
-  Morgan Sanitation will be running the Wednesday, Dec. 25th and Thursday 26th
-  routes on Thursday, December 26th.
+  A Note from Morgan Sanitation: 
+
+
+  Morgan Sanitation WILL NOT conduct garbage pick up on Wednesday, December
+  25th. On Thursday, December 26th Morgan Sanitation will collect for both
+  Wednesday and Thursday routes.
 ---
-Morgan Sanitation will be running the Wednesday, Dec. 25th and Thursday 26th routes on Thursday, December 26th.
+A Note from Morgan Sanitation: 
+
+Morgan Sanitation WILL NOT conduct garbage pick up on Wednesday, December 25th. On Thursday, December 26th Morgan Sanitation will collect for both Wednesday and Thursday routes.
